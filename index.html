@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <img src="asserts/Top.svg" alt="" class="logo" />
+        </header>
+
+        <section>
+            <input type="text" class="text" id="text" placeholder="Digite seu texto" />
+
+            <div class="textResult">
+                <textarea name="textCrip" class="textCrip" id="textCrip"></textarea>
+                <button class="copy" onclick="copy()">Copiar</button>
+            </div>
+
+            <div class="notResult">
+                <img class="notFound" src="asserts/High quality products 1 1.svg" />
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="mensage">
+                <img src="asserts/bi_exclamation-circle-fill.svg" />
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="buttons">
+                <button class="encrypt" onclick="encrypt()">Criptografar</button>
+                <button class="decrypt" onclick="decrypt()">Descriptografar</button>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
